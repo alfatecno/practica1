@@ -10,7 +10,5 @@ export class AppComponent {
 
   constructor(public infoPaginaService: InfoPaginaService){
 
-
-
   }
 }
