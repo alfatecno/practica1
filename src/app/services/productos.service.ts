@@ -25,13 +25,15 @@ export class ProductosService {
 
     this.http.get<Producto[]>('https://proyecto-1-3cf3e-default-rtdb.firebaseio.com/productos_idx.json')
     .subscribe((resp: Producto[]) => {
-       console.log(resp);
+
        this.productos = resp;
        this.cargando = false;
-
-
     });
+  }
 
+  getProducto (id: string){
+
+    return this.http.get(`https://proyecto-1-3cf3e-default-rtdb.firebaseio.com/productos/${id}.json`) //agregar backtick para insercciones de pedazos
   }
 
 }

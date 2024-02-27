@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProductosService } from '../../services/productos.service';
 
 @Component({
@@ -6,10 +6,12 @@ import { ProductosService } from '../../services/productos.service';
   templateUrl: './portafolio.component.html',
   styleUrl: './portafolio.component.css'
 })
-export class PortafolioComponent {
+export class PortafolioComponent implements OnInit {
 
   constructor (public ProductosService: ProductosService){
 
+
+  }ngOnInit(): void {
 
   }
 }
