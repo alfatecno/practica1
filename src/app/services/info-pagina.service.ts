@@ -34,7 +34,7 @@ export class InfoPaginaService {
     this.http.get('https://proyecto-1-3cf3e-default-rtdb.firebaseio.com/equipo.json')
     .subscribe( (resp:any ) =>{
      this.equipo = resp; //la respuesta generada
-     console.log(resp);  //para mirarlo en la consola
+    // console.log(resp);  //para mirarlo en la consola
 
     });
   }
